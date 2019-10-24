@@ -7,8 +7,8 @@ window.addEventListener('DOMContentLoaded', function() {
   console.log(tabInfo);
 
   function showTabInfo(item) {
-    tabInfo.forEach(function(tab){
-      tab.classList.remove('nj-tabs__info_show');
+    tabInfo.forEach(function(currentTab){
+      currentTab.classList.remove('nj-tabs__info_show');
     });
     for (var i = item; i < tabInfo.length; i++) {
       tabInfo[item].classList.add('nj-tabs__info_show');
