@@ -6,3 +6,15 @@ body {
 * {
   box-sizing: border-box;
 }
+
+.nj-tabs__info {
+  display: none;
+}
+
+.nj-tabs__info_show {
+  display: block;
+}
+
+.nj-tabs__info_hide {
+  display: none;
+}
