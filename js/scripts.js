@@ -21,6 +21,10 @@ window.addEventListener('DOMContentLoaded', function() {
     if (target.matches('div.nj-tabs__title')) {
       for (var i = 0; i < tab.length; i++) {
         if (target == tab[i]) {
+          tab.forEach(function (currentTab) {
+            currentTab.classList.remove('active');
+          })
+          tab[i].classList.add('active');
           console.log(i);
           showTabInfo(i);
           break;
